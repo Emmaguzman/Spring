@@ -8,8 +8,17 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
+    
+    <!-- Definir dependencia -->
+    <bean id="miFortuna"
+    	class="com.EmmaSpring.Demo_Uno.ServicioFelizDeFortuna">    
+    </bean>
+    
     <bean id="Entrenador" 
     	  class="com.EmmaSpring.Demo_Uno.Entrenador_BasquetBall">
+    	  <!-- Aplicar inyeccion de dependencia al constructor-->
+    	 <constructor-arg ref="miFortuna"></constructor-arg>
+    	  
     </bean >
 </beans>
 

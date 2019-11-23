@@ -10,6 +10,8 @@ public class HolaAplicacionSpring {
 		Entrenador ent=contex.getBean("Entrenador",Entrenador.class);
 		//Llamar a los metodos del beans	
 		System.out.println(ent.getEntrenamientoDiario());
+		
+		System.out.println(ent.getFortunaDiaria());
 		// cerrar contexto 
 		contex.close();
 	}

@@ -8,4 +8,10 @@ public class Entrenador_Atletismo implements Entrenador {
 		return "Correr por 40 kilometros sin parar wachin";
 	}
 
+	@Override
+	public String getFortunaDiaria() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
